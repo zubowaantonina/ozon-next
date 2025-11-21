@@ -1,7 +1,8 @@
 import "./scss/style.scss"
 import localFont from 'next/font/local'
 import Header from './ui/header'
-import Cart from "./ui/Cart";
+import Cart from "./ui/cart";
+
 
 
 
