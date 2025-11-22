@@ -8,7 +8,7 @@ export default async function Home({searchParams}:{searchParams:Query}) {
 	const query=await searchParams
 	const products = await getData(query)
 
-	// console.log(products);
+	console.log(products);
 
 	return (
 		<div className="container">
