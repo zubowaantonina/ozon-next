@@ -1,4 +1,4 @@
-export interface Query{
-    category?:string
-    search?:string
+export interface Query {
+  category?: string;
+  search?: string;
 }

@@ -8,14 +8,19 @@ export const getData = async (query: Query) => {
     const data = await response.json()
 
     return data.filter((product: Product) => {
-        if (query.category !== product.category) {
-            return false
-        }
-        if(query.search){
-            if(!product.title.includes(query.search)){
-            return false
+        
+         if (query.category) {
+      if (query.category !== product.category) {
+        return false;
+      }
+    }
+        if (query.search) {
+            if (!product.title.includes(query.search)) {
+                return false
             }
         }
+
         return true
+
     })
 }
